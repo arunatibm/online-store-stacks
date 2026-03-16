@@ -15,7 +15,7 @@ required_providers {
 provider "random" "this" {}
 
 component "app-cache" {
-  source = "../components/comp-cache"
+  source = "github.com/arunatibm/online-store-stacks.git//components/comp-cache"
 
   inputs = {
     prefix = var.prefix
@@ -27,7 +27,7 @@ component "app-cache" {
 }
 
 component "app-rev-proxy" {
-  source = "../components/comp-nginx"
+  source = "github.com/arunatibm/online-store-stacks.git//components/comp-nginx"
 
   inputs = {
     prefix = var.prefix

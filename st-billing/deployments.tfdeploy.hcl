@@ -25,3 +25,10 @@ deployment "eu-de" {
     prefix    = "eu-de"
   }
 }
+
+
+deployment "ap-in" {
+  inputs = {
+    prefix    = "ap-in"
+  }
+}

@@ -23,26 +23,28 @@ deployment_auto_approve "successful_plans" {
 }
 
 deployment "ca-west" {
-  deployment_group = "north_america"
+  deployment_group = deployment_group.north_america
   inputs = {
     prefix    = "ca-west"
   }
 }
 
 deployment "us-east" {
-  deployment_group = "north_america"
+  deployment_group = deployment_group.north_america
   inputs = {
     prefix    = "us-east"
   }
 }
 
 deployment "eu-de" {
+  deployment_group = deployment_group.europe
   inputs = {
     prefix    = "eu-de"
   }
 }
 
 deployment "eu-es" {
+  deployment_group = deployment_group.europe
   inputs = {
     prefix    = "eu-es"
   }

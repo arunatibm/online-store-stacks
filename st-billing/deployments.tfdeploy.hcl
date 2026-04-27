@@ -5,7 +5,10 @@ deployment_group "north_america" {
 }
 
 deployment_group "europe" {
-  auto_approve_checks = [ deployment_auto_approve.successful_plans ]
+  auto_approve_checks = [
+    deployment_auto_approve.successful_plans,
+    deployment_auto_approve.no_removals
+  ]
 }
 
 deployment_auto_approve "no_removals" {

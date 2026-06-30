@@ -13,6 +13,9 @@ required_providers {
 }
 
 provider "random" "this" {}
+provider "random" "random-app-cache" {}
+provider "random" "random-app-rev-proxy" {}
+provider "random" "random-app-payment" {}
 
 component "app-cache" {
   source = "github.com/arunatibm/online-store-stacks.git//components/comp-cache"
@@ -22,7 +25,7 @@ component "app-cache" {
   }
 
   providers = {
-    random = provider.random.this
+    random = provider.random.random-app-cache
   }
 }
 
@@ -34,7 +37,7 @@ component "app-rev-proxy" {
   }
 
   providers = {
-    random = provider.random.this
+    random = provider.random.random-app-rev-proxy
   }
 }
 
@@ -46,7 +49,7 @@ component "app-payment" {
   }
 
   providers = {
-    random = provider.random.this
+    random = provider.random.random-app-payment
   }
 }
 

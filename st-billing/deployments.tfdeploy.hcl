@@ -50,3 +50,9 @@ deployment "eu-es" {
     prefix    = "eu-es"
   }
 }
+
+deployment "eu-gb" {
+  inputs = {
+    prefix    = "eu-gb"
+  }
+}

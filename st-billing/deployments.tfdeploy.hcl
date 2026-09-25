@@ -33,6 +33,7 @@ deployment "ca-west" {
 }
 
 deployment "us-east" {
+  deployment_group = deployment_group.north_america
   inputs = {
     prefix    = "us-east"
   }
@@ -46,12 +47,14 @@ deployment "eu-de" {
 }
 
 deployment "eu-es" {
+  deployment_group = deployment_group.europe
   inputs = {
     prefix    = "eu-es"
   }
 }
 
 deployment "eu-gb" {
+  deployment_group = deployment_group.europe
   inputs = {
     prefix    = "eu-gb"
   }

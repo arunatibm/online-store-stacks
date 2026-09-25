@@ -1,14 +1,14 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 deployment_group "north_america" {
-  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+  #auto_approve_checks = [ deployment_auto_approve.no_removals ]
 }
 
 deployment_group "europe" {
-  auto_approve_checks = [
-    deployment_auto_approve.successful_plans,
-    deployment_auto_approve.no_removals
-  ]
+  #auto_approve_checks = [
+  #  deployment_auto_approve.successful_plans,
+  #  deployment_auto_approve.no_removals
+  #]
 }
 
 deployment_auto_approve "no_removals" {
@@ -28,34 +28,34 @@ deployment_auto_approve "successful_plans" {
 deployment "ca-west" {
   deployment_group = deployment_group.north_america
   inputs = {
-    prefix    = "ca-west"
+    prefix    = "ca-west1"
   }
 }
 
 deployment "us-east" {
   deployment_group = deployment_group.north_america
   inputs = {
-    prefix    = "us-east"
+    prefix    = "us-east1"
   }
 }
 
 deployment "eu-de" {
   deployment_group = deployment_group.europe
   inputs = {
-    prefix    = "eu-de"
+    prefix    = "eu-de1"
   }
 }
 
 deployment "eu-es" {
   deployment_group = deployment_group.europe
   inputs = {
-    prefix    = "eu-es"
+    prefix    = "eu-es1"
   }
 }
 
 deployment "eu-gb" {
   deployment_group = deployment_group.europe
   inputs = {
-    prefix    = "eu-gb"
+    prefix    = "eu-gb1"
   }
 }

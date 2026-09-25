@@ -1,14 +1,14 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 deployment_group "north_america" {
-  #auto_approve_checks = [ deployment_auto_approve.no_removals ]
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
 }
 
 deployment_group "europe" {
-  #auto_approve_checks = [
-  #  deployment_auto_approve.successful_plans,
-  #  deployment_auto_approve.no_removals
-  #]
+  auto_approve_checks = [
+    deployment_auto_approve.successful_plans,
+    deployment_auto_approve.no_removals
+  ]
 }
 
 deployment_auto_approve "no_removals" {

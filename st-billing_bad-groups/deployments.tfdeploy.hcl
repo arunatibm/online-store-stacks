@@ -32,33 +32,33 @@ deployment "ca-west" {
   }
 }
 
-# deployment "us-east" {
-#   deployment_group = north_america
-#   inputs = {
-#     prefix    = "us-east1"
-#   }
-# }
+deployment "us-east" {
+  deployment_group = north_america
+  inputs = {
+    prefix    = "us-east1"
+  }
+}
 
-# deployment "eu-de" {
-#   deployment_group = deployment_group_wrong.europe
-#   inputs = {
-#     prefix    = "eu-de1"
-#   }
-# }
+deployment "eu-de" {
+  deployment_group = deployment_group_wrong.europe
+  inputs = {
+    prefix    = "eu-de1"
+  }
+}
 
-# deployment "eu-es" {
-#   deployment_group = deployment_group.missing_group
-#   inputs = {
-#     prefix    = "eu-es1"
-#   }
-# }
+deployment "eu-es" {
+  deployment_group = deployment_group.missing_group
+  inputs = {
+    prefix    = "eu-es1"
+  }
+}
 
-# deployment "eu-fr" {
-#   deployment_group = europe
-#   inputs = {
-#     prefix    = "eu-fr1"
-#   }
-# }
+deployment "eu-fr" {
+  deployment_group = europe
+  inputs = {
+    prefix    = "eu-fr1"
+  }
+}
 
 deployment "eu-it" {
   deployment_group = "deployment_group.europe"

@@ -46,12 +46,12 @@ deployment "ca-west" {
 #   }
 # }
 
-deployment "eu-es" {
-  deployment_group = deployment_group.missing_group
-  inputs = {
-    prefix    = "eu-es1"
-  }
-}
+# deployment "eu-es" {
+#   deployment_group = deployment_group.missing_group
+#   inputs = {
+#     prefix    = "eu-es1"
+#   }
+# }
 
 # deployment "eu-fr" {
 #   deployment_group = europe
@@ -61,7 +61,7 @@ deployment "eu-es" {
 # }
 
 deployment "eu-it" {
-  deployment_group = "europe"
+  deployment_group = "deployment_group.europe"
   inputs = {
     prefix    = "eu-it1"
   }

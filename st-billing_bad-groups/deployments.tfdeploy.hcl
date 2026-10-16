@@ -53,6 +53,20 @@ deployment "eu-es" {
   }
 }
 
+deployment "eu-fr" {
+  deployment_group = europe
+  inputs = {
+    prefix    = "eu-fr1"
+  }
+}
+
+deployment "eu-it" {
+  deployment_group = "europe"
+  inputs = {
+    prefix    = "eu-it1"
+  }
+}
+
 deployment "eu-gb" {
   deployment_group = deployment_group.europe
   inputs = {

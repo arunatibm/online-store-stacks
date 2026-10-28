@@ -39,7 +39,7 @@ deployment "ca-west" {
 deployment "us-east" {
   deployment_group = deployment_group.north_america
   inputs = {
-    prefix    = "us-east1"
+    prefix    = "us-east10"
   }
 }
 

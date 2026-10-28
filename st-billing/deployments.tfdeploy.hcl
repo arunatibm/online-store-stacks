@@ -53,7 +53,7 @@ deployment "eu-de" {
 deployment "eu-es" {
   deployment_group = deployment_group.europe
   inputs = {
-    prefix    = "eu-es1"
+    prefix    = "eu-es10"
   }
 }
 

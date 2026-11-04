@@ -11,6 +11,10 @@ deployment_group "europe" {
   ]
 }
 
+deployment_group "asia" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
 deployment_auto_approve "no_removals" {
   check {
     condition = context.plan.changes.remove == 0
@@ -71,5 +75,12 @@ deployment "eu-gb" {
   deployment_group = deployment_group.europe
   inputs = {
     prefix    = "eu-gb1"
+  }
+}
+
+deployment "ap-jp" {
+  deployment_group = deployment_group.europe
+  inputs = {
+    prefix    = "ap-jp1"
   }
 }

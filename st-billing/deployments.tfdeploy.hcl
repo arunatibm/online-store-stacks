@@ -8,6 +8,30 @@ deployment_group "unused-group2" {
   auto_approve_checks = [ deployment_auto_approve.no_removals ]
 }
 
+deployment_group "unused-group3" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
+deployment_group "unused-group4" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
+deployment_group "unused-group5" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
+deployment_group "unused-group6" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
+deployment_group "unused-group7" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
+deployment_group "unused-group8" {
+  auto_approve_checks = [ deployment_auto_approve.no_removals ]
+}
+
 deployment_group "north_america" {
   auto_approve_checks = [ deployment_auto_approve.no_removals ]
 }
